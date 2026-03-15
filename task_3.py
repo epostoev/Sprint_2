@@ -4,12 +4,11 @@ class PointsForPlace:
         points_for_place = 0
         if place > 100:
             print("Баллы начисляются только первым 100 участникам")
-            points_for_place = 0
         elif place < 1:
             print("Спортсмен не может занять нулевое или отрицательное место")
-        elif place > 0 & place <= 100:
+        else:
             points_for_place = 101 - place
-            return points_for_place
+        return points_for_place
 
 
 class PointsForMeters:
